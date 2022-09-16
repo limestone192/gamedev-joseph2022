@@ -32,10 +32,22 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-piture" a
   
   <input type=button value="1. Input/Output" onclick="{
     document.getElementById('myDiv01').innerHTML = 'input wsfsdfsgsf<br>'
-    +'sd<br>sdfg
+    +'sd<br>sdfg<br>output is .......................................'
     }">
     
-
+    <input type=-button value="4. Decisions" onclick="{
+      document.getElementBtId('myDiv01').innerHTML = '
+<pre>
+if (hour < 18 ) {
+  freeting = \'Good hour\';
+  }
+  </pre>
+  
+  '}"><br> 
+  
+  <div id="myDiv01">...</div>
+  <body>
+  </html>
   
   
   
