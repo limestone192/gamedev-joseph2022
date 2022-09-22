@@ -19,12 +19,25 @@
   <li>China
   <li>Cuba
   <li>Chad
- </ul>
+</ul>
 
- <h2> Tables</h2>
+<h2> Tables</h2>
+
+<table border=1> 
+<tr><td>A</td>B</tb></tr>
+<tr><td>1</td>2</tb></tr>
+</table><br>
+
+<b>Assignment</b>
+0<br><br><br>
+
+<h2>Advanced</h2>
  
- <table border=1>
- <tr>
+<image id ="myImage01" src="" style+"position:relative; left:0; top:0; width:50; height:50; height:50; "><br>
  
- 
- 
+<input type=button value="Go left" onclick="{
+  document.getElementById('myImage01').style.left = '200px'
+  document.getElementById('myDiv01').innerHTML = 'it wnet lft'
+  }">
+
+  <div id ="myDiv01"></div>
