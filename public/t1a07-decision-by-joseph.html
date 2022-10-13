@@ -33,6 +33,16 @@ if(myhour <18) {
                     document.getElementById('myDiv01').innerHTML = myIn01 + ' is less than 3'}
 }">
                                                                                              
+<input type=button value="complex" onclick="{
+                                                                                             let myIn01 = parseFloat(document.getElementById('myNum01').value)
+                                                                                                                                                      if ((myIn01 != 3 || myIn01 > -3)  && myIn01 > -3) && myIn01 <=100 ){
+                                                                                                                                                      document.getElementById('myDiv01').innerHTML = myIn01 = 'is complex'
+                                                                                                                                                      } else {
+                                                                                                                                                        document.getElementById('myDiv01').innerHTML = ' is not complex'}
+                                                                                                                                                        }">
+                                                                                                                                                        
+<div id = "myDiv01"></div>
+                                                                                             
                                                                                              
                                                                                              
                                                                                              
