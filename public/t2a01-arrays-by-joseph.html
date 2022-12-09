@@ -33,3 +33,17 @@ for (let myLoop=0; myLoop < myTemp; myLoop++){
 <div id =" myDiv01'></div>
 
 <br>
+
+<button onclick="myFunction()">click???</button>
+
+<p id="thing"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits[fruits.length] = "Lemon";
+  document.getElementById("thing").innerHTML = fruits;
+}
+</script>
