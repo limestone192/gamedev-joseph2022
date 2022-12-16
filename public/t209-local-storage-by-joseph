@@ -1,0 +1,78 @@
+<html>
+   <head>
+      <title>Local Storage</title>
+      <style>
+         body {
+            background-color: #363636;
+            color: white;
+         }      
+         .light-mode {
+            background-color: white;
+            color: black;
+         }
+         a:visited {
+            color: lightGreen;
+         }
+         button {
+            width: 50px;
+         }
+      </style>
+   </head>
+   <body>
+      <h5>Version 0.1.0-15</h5><br>
+      <h1 align=center>t209-local-storage-by-joseph</h1>
+      <a href="https://fercasrey.github.io/GameDev2022Fer/public/">To my main page</a><br>
+      <input type=button value="Toggle Mode" onclick="lightMode()">
+
+      <hr>
+
+
+      <body onload="{
+         myStorage = localStorage.getItem('myStoredText')
+         if(myStorage  != null){
+            document.getElementById('myText1').value = myStorage 
+         }
+      }">
+
+      <body onunload="{
+         localstorage.setItem('myStoredText',document.getElementById('myText1').value)
+      }">   
+
+      Text example: <input id="myText1" type=text size=70 value="" placeholder="Write here to store"><br>
+   
+      <input type="button" value="Store Text" onClick="{
+         localStorage.setItem('myStoredText',document.getElementById('myText1').value)
+         alert(document.getElementById('myText1').value + ' \nHas been stored')
+         document.getElementById('myText1').value = ''
+      }">
+
+      <input type="button" value="Retrieve Text" onClick="{
+         document.getElementById('myText1').value = localStorage.getItem('myStoredText')
+      }"> 
+
+
+      <hr>
+
+      <!--Another storage text-->
+      <input id="myText01" value="" type="text" style="width: 100px;"><br>
+      <button onclick="save()">Save</button>
+      <button onclick="load()">Load</button>
+
+   </body>
+   <script>
+      function lightMode() {
+         var element = document.body;
+         element.classList.toggle("light-mode");                        
+      }
+
+      function save() {
+         //myText = document.getElementById('myText01').value;
+         localStorage.setItem('myStoredText01',document.getElementById('myText01').value)
+         alert('Done')
+      }
+
+      function load() {
+         document.getElementById('myText01').value = localStorage.getItem('myStoredText01')
+      }
+   </script>
+</html>
